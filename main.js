@@ -15,9 +15,8 @@ $(document).ready(function(){ // carica la funzione solo quando ha caricato il D
     $('.last').addClass('active'); // assegno la classe active all'ultima
   }
   })
-  var pos;
   $('.fa-circle').click(function(){ // al click dei punti esegui
-    pos = $(this).index(); /* trova la posizione del punto cliccato
+    var pos = $(this).index(); /* trova la posizione del punto cliccato
     (al posto della variabile potrei mettere questo comando in .eq() e funzionerebbe,
      ma cosi si legge meglio)*/
     if($(this).hasClass('active') === false){ // se il punto cliccato non ha la classe active
