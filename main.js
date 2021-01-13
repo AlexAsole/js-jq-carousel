@@ -19,11 +19,9 @@ $(document).ready(function(){ // carica la funzione solo quando ha caricato il D
     var pos = $(this).index(); /* trova la posizione del punto cliccato
     (al posto della variabile potrei mettere questo comando in .eq() e funzionerebbe,
      ma cosi si legge meglio)*/
-    if($(this).hasClass('active') === false){ // se il punto cliccato non ha la classe active
       $('.fa-circle, img').removeClass('active'); // rimuovi da tutti i punti e da le immagini l'active
       $(this).addClass('active'); // aggiungo al punto cliccato la classe active
       $('img').eq(pos).addClass('active'); /* aggiungo all'immagine corrispondente
        al numero di posizione del punto la classe active */
-    }
   })
 })
