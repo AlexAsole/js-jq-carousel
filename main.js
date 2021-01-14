@@ -21,7 +21,7 @@ $(document).ready(function(){ // carica la funzione solo quando ha caricato il D
     next();
   })
   $(document).keydown(function(e){
-    if(e.which === 39){
+    if(e.keyCode === 39){
       next()
     }
   })
@@ -29,7 +29,7 @@ $(document).ready(function(){ // carica la funzione solo quando ha caricato il D
     prev();
   })
   $(document).keydown(function(e){
-    if(e.which === 37){
+    if(e.keyCode === 37){
       prev()
     }
   })
